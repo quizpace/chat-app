@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("img/background1.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  animation: floatBubble 5s infinite;
+}
+
+#bubble {
+    position: absolute;
+    left:25%;
+  width: 70%;
+  z-index: 1;
+}
+
+.chat-text {
+  width: 25%;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(91, 98, 107);
+  padding: 10px;
+  font-family: "Agbalumo", sans-serif;
+  opacity: 0.9;
+}
+
+.chat-text.hebrew {
+  font-family: "Rubik 80s Fade", sans-serif; /* Change to "Rubik 80s Fade" */
+}
+
+.input-container {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 70%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-field {
+  border: 2px solid #a2c4e8;
+  border-radius: 30px;
+  padding: 4%;
+  box-shadow: 0 0 10px #80b5ed;
+  font-size: 1rem;
+}
+
+.button2 {
+  width: 15%;
+  color: white;
+  cursor: pointer;
+  padding: 2px;
+}

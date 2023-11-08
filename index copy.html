@@ -11,88 +11,82 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade:wght@400&display=swap"
     />
-    <title>Bubble Chat</title>
+    <title>Zombie Chat</title>
     <style>
-      /* @media (min-width: 360px) {
+      @media (min-width: 360px) {
         body {
           background-image: url("img/background1.jpg");
           background-size: cover;
           background-repeat: no-repeat;
         }
-      } */
 
-      body {
-        background-image: url("img/background1.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-
-      .container {
-        position: relative;
-        text-align: center;
-        animation: floatBubble 5s infinite;
-      }
-
-      .img-container {
-        width: 30%;
-        z-index: 1;
-      }
-
-      .chat-text {
-        width: 25%;
-        font-size: 1.5rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: rgb(91, 98, 107);
-        padding: 10px;
-        font-family: "Agbalumo", sans-serif;
-        opacity: 0.9;
-      }
-
-      .chat-text.hebrew {
-        font-family: "Rubik 80s Fade", sans-serif; /* Change to "Rubik 80s Fade" */
-      }
-
-      @keyframes floatBubble {
-        0% {
-          transform: translateY(0);
+        .container {
+          position: relative;
+          text-align: center;
+          animation: floatBubble 5s infinite;
         }
-        50% {
-          transform: translateY(-20px);
+
+        .img-container {
+          width: 30%;
+          z-index: 1;
         }
-        100% {
-          transform: translateY(0);
+
+        .chat-text {
+          width: 25%;
+          font-size: 1.5rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: rgb(30, 78, 141);
+          padding: 10px;
+          font-family: "Agbalumo", sans-serif;
+          opacity: 0.9;
         }
-      }
 
-      .input-container {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+        .chat-text.hebrew {
+          font-family: "Rubik 80s Fade", sans-serif; /* Change to "Rubik 80s Fade" */
+        }
 
-      .input-field {
-        border: 2px solid #a2c4e8;
-        border-radius: 20px;
-        padding: 10px;
-        box-shadow: 0 0 10px #80b5ed;
-        font-size: 1rem;
-        width: 80%;
-      }
+        @keyframes floatBubble {
+          0% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
 
-      .button2 {
-        width: 8%;
-        color: white;
-        cursor: pointer;
-        border-radius: 20px;
-        padding: 10px 20px;
-        margin-left: 10px;
+        .input-container {
+          position: absolute;
+          bottom: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .input-field {
+          border: 2px solid #a2c4e8;
+          border-radius: 20px;
+          padding: 10px;
+          box-shadow: 0 0 10px #80b5ed;
+          font-size: 1rem;
+          width: 80%;
+        }
+
+        .button2 {
+          width: 8%;
+          color: white;
+          cursor: pointer;
+          border-radius: 20px;
+          padding: 10px 20px;
+          margin-left: 10px;
+        }
       }
     </style>
   </head>
