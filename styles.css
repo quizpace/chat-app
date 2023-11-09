@@ -4,13 +4,12 @@
   box-sizing: border-box;
 }
 
-
 body {
-  /* background-image: url("img/background1.jpg"); */
   width: 100vw;
   height: 100vh;
   background-image: url("img/bubiphone.jpg");
   background-repeat: no-repeat;
+  background-size: cover; /* Add this property to make the background image cover the screen */
 }
 
 .container {
@@ -32,17 +31,17 @@ body {
 
 #bubble {
   position: absolute;
-  left: 10%;
+  left: 1%;
   width: 100%;
   z-index: 1;
 }
 
 .chat-text {
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 0.9rem;
   position: absolute;
   top: 100%;
-  left: 10%;
+  left: 1%;
   /* transform: translate(-50%, -50%); */
   color: rgb(3, 1, 16);
   padding: 10%;
@@ -57,25 +56,30 @@ body {
 .input-container {
   width: 100%;
   position: absolute;
-  top: 100%;
-  left: 70%;
-  transform: translateX(-50%);
+  bottom: 1%;
+  left: 0;
+  transform: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .input-field {
-  border: 2px solid #a2c4e8;
+  border: 2px solid rgb(162, 211, 232);
   border-radius: 30px;
-  padding: 4%;
-  box-shadow: 0 0 10px #80b5ed;
+  padding: 2%;
+  box-shadow: 0 0 10px #80e7ed;
   font-size: 1rem;
+  left: 7%;
+  position: absolute;
+  bottom: 0;
+  margin: 0; /* Set margin to 0 to ensure it sticks to the bottom */
 }
 
 .button2 {
-  width: 15%;
-  color: white;
+  position: absolute;
+  width: 12%; /* Adjust the width to fit the button content */
   cursor: pointer;
-  padding: 2px;
+  bottom: 1%;
+  right: 10%;
 }
